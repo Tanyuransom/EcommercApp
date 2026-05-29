@@ -86,7 +86,7 @@ export default async function ProductDetailPage({
     const callbackUrl = `/${locale}/products/${product.slug}`;
 
     return (
-      <section className="mx-auto w-full max-w-2xl space-y-6 rounded-3xl border border-charcoal-900/10 bg-cream-50 p-4 sm:p-6 lg:p-8 text-center shadow-xl shadow-charcoal-900/5">
+      <section className="mx-auto w-full max-w-2xl space-y-6 rounded-3xl border border-white/60 bg-white/35 backdrop-blur-md p-5 sm:p-8 lg:p-10 text-center shadow-xl shadow-charcoal-900/5">
         <h1 className="font-display text-xl sm:text-2xl lg:text-3xl text-charcoal-900">{t("labels.accountRequiredTitle")}</h1>
         <p className="text-xs sm:text-sm text-charcoal-700">{t("labels.accountRequiredMessage")}</p>
 
@@ -131,7 +131,7 @@ export default async function ProductDetailPage({
         {t("labels.backToCatalog")}
       </a>
 
-      <article className="grid grid-cols-1 gap-4 sm:gap-6 rounded-3xl border border-charcoal-900/10 bg-cream-50 p-4 sm:p-6 shadow-xl shadow-charcoal-900/5 md:grid-cols-2">
+      <article className="grid grid-cols-1 gap-6 sm:gap-8 rounded-3xl border border-white/60 bg-white/35 backdrop-blur-md p-5 sm:p-8 shadow-xl shadow-charcoal-900/5 md:grid-cols-2">
         <div className="space-y-3">
           <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-rose-gold-200/35 via-cream-200 to-charcoal-300/20">
             {product.images[0] ? (
@@ -222,7 +222,7 @@ export default async function ProductDetailPage({
         </div>
       </article>
 
-      <article className="rounded-3xl border border-charcoal-900/10 bg-cream-50 p-4 sm:p-6 shadow-lg shadow-charcoal-900/5">
+      <article className="rounded-3xl border border-white/60 bg-white/35 backdrop-blur-md p-5 sm:p-8 shadow-lg shadow-charcoal-900/5">
         <h2 className="font-display text-xl sm:text-2xl text-charcoal-900">{t("labels.reviewsTitle")}</h2>
         <p className="mt-2 text-sm text-charcoal-700">{t("labels.reviewsSubtitle")}</p>
 

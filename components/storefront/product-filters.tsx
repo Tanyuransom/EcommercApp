@@ -34,7 +34,7 @@ export function ProductFilters({locale, labels, value}: ProductFiltersProps) {
       method="GET"
       className="w-full overflow-x-hidden grid gap-2 sm:gap-3 rounded-3xl border border-charcoal-900/10 bg-cream-50 p-3 sm:p-5 shadow-lg shadow-charcoal-900/5 grid-cols-1 sm:grid-cols-2 md:grid-cols-12 animate-fade-up-delay-1"
     >
-      <div className="sm:col-span-1 md:col-span-4">
+      <div className="sm:col-span-2 md:col-span-4">
         <label htmlFor="q" className="mb-1 block text-xs font-semibold uppercase tracking-[0.12em] text-charcoal-700">
           {labels.search}
         </label>

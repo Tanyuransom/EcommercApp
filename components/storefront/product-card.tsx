@@ -31,7 +31,7 @@ export function ProductCard({locale, product, labels}: ProductCardProps) {
   const sizeSummary = formatSizePricingSummary(extractSizePricing(product.description), 2);
 
   return (
-    <article className="group overflow-hidden rounded-3xl border border-charcoal-900/10 bg-cream-50 shadow-lg shadow-charcoal-900/5 transition hover:-translate-y-0.5 hover:shadow-xl animate-fade-up-delay-2 alive-hover">
+    <article className="group overflow-hidden rounded-3xl border border-charcoal-900/8 bg-white/85 transition-all hover:border-charcoal-900/18 hover:shadow-2xl alive-hover duration-300 animate-fade-up-delay-2">
       <div className="relative h-56 overflow-hidden bg-gradient-to-br from-rose-gold-200/35 via-cream-200 to-charcoal-300/20">
         {product.imageUrl ? (
           // Using a native image tag keeps external image setup simple before Cloudinary optimization is configured.
@@ -68,7 +68,7 @@ export function ProductCard({locale, product, labels}: ProductCardProps) {
           </div>
           <Link
             href={`/${locale}/products/${product.slug}`}
-            className="rounded-full border border-charcoal-900/20 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.1em] text-charcoal-900 transition hover:bg-rose-gold-100"
+            className="rounded-full border border-charcoal-900/15 bg-white/95 px-4.5 py-2 text-xs font-bold uppercase tracking-[0.08em] text-charcoal-900 transition-all hover:bg-cream-100/90 hover:-translate-y-0.5 active:translate-y-0 shadow-sm"
           >
             {labels.viewDetails}
           </Link>

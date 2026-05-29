@@ -99,7 +99,7 @@ export default async function ProductsPage({
 
   return (
     <section className="w-full overflow-x-hidden space-y-6 animate-fade-up">
-      <header className="rounded-3xl border border-charcoal-900/10 bg-cream-50 px-4 py-5 sm:px-6 sm:py-7 shadow-lg shadow-charcoal-900/5 animate-fade-up-delay-1">
+      <header className="rounded-3xl border border-white/60 bg-white/35 backdrop-blur-md px-5 py-6 sm:px-8 sm:py-8 shadow-lg shadow-charcoal-900/5 animate-fade-up-delay-1">
         <h1 className="font-display text-2xl sm:text-3xl lg:text-4xl text-charcoal-900">{t("title")}</h1>
         <p className="mt-2 text-sm sm:text-base text-charcoal-700">{t("subtitle")}</p>
       </header>
@@ -136,7 +136,7 @@ export default async function ProductsPage({
       </div>
 
       {products.items.length ? (
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3 animate-fade-up-delay-2">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 animate-fade-up-delay-2">
           {products.items.map((product) => (
             <ProductCard
               key={product.id}
@@ -163,7 +163,7 @@ export default async function ProductsPage({
           ))}
         </div>
       ) : (
-        <div className="rounded-3xl border border-dashed border-charcoal-900/20 bg-cream-50 p-10 text-center text-charcoal-700">
+        <div className="rounded-3xl border border-dashed border-charcoal-900/20 bg-white/20 backdrop-blur-sm p-12 text-center text-charcoal-700">
           {t("empty")}
         </div>
       )}

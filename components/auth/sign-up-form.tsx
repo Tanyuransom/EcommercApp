@@ -77,15 +77,11 @@ export function SignUpForm({locale, callbackUrl, labels}: SignUpFormProps) {
       }).catch(() => null);
 
       if (!signInResult || signInResult.error || !signInResult.ok) {
-        router.replace(`/${locale}/auth/sign-in`);
-        router.refresh();
-        setIsSubmitting(false);
+        window.location.href = `/${locale}/auth/sign-in`;
         return;
       }
 
-      router.replace(callbackUrl);
-      router.refresh();
-      setIsSubmitting(false);
+      window.location.href = callbackUrl;
     } catch {
       setError(labels.registerError);
       setIsSubmitting(false);

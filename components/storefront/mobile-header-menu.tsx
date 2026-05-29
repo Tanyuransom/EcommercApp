@@ -75,7 +75,7 @@ export function MobileHeaderMenu({
         aria-expanded={isOpen}
         aria-controls="mobile-header-menu"
         onClick={() => setIsOpen((value) => !value)}
-        className="inline-flex items-center gap-2 rounded-full border border-charcoal-900/15 bg-white/90 px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.08em] text-charcoal-900 shadow-md shadow-charcoal-900/8 ring-1 ring-white/70 backdrop-blur transition hover:-translate-y-0.5 hover:shadow-lg lg:hidden"
+        className="inline-flex items-center gap-2 rounded-full border border-charcoal-900/15 bg-white/90 px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.08em] text-charcoal-900 shadow-md shadow-charcoal-900/8 ring-1 ring-white/70 backdrop-blur transition hover:-translate-y-0.5 hover:shadow-lg xl:hidden"
       >
         <span className="flex flex-col gap-1">
           <span className="block h-0.5 w-4 rounded-full bg-charcoal-900" />
@@ -88,7 +88,7 @@ export function MobileHeaderMenu({
       {mounted
         ? createPortal(
             isOpen ? (
-              <div className="fixed inset-0 z-[2147483647] lg:hidden">
+              <div className="fixed inset-0 z-[2147483647] xl:hidden">
                 <button
                   type="button"
                   aria-label="Close menu"

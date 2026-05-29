@@ -50,9 +50,7 @@ export function SignInForm({locale, callbackUrl, labels}: SignInFormProps) {
       return;
     }
 
-    router.replace(callbackUrl);
-    router.refresh();
-    setIsSubmitting(false);
+    window.location.href = callbackUrl;
   }
 
   return (

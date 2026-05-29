@@ -52,7 +52,7 @@ export default async function CheckoutPage({
     });
 
     return (
-      <section className="w-full overflow-x-hidden space-y-6 rounded-3xl border border-charcoal-900/10 bg-cream-50 p-4 sm:p-8 shadow-xl shadow-charcoal-900/5">
+      <section className="w-full overflow-x-hidden space-y-8 rounded-3xl border border-white/60 bg-white/35 backdrop-blur-md p-5 sm:p-8 shadow-xl shadow-charcoal-900/5">
         <div className="text-center">
           <h1 className="font-display text-xl sm:text-2xl lg:text-3xl text-charcoal-900">{t("missingProductTitle")}</h1>
           <p className="mt-2 text-xs sm:text-sm text-charcoal-700">{t("missingProductMessage")}</p>
@@ -154,7 +154,7 @@ export default async function CheckoutPage({
     const hasInvalidVariantRequest = Boolean(requestedVariant);
 
     return (
-      <section className="space-y-6 rounded-3xl border border-charcoal-900/10 bg-cream-50 p-4 sm:p-6 shadow-xl shadow-charcoal-900/5">
+      <section className="space-y-6 rounded-3xl border border-white/60 bg-white/35 backdrop-blur-md p-5 sm:p-8 shadow-xl shadow-charcoal-900/5">
         <header className="space-y-2">
           <h1 className="font-display text-2xl sm:text-3xl text-charcoal-900">{t("chooseVariantTitle", {product: product.name})}</h1>
           <p className="text-sm text-charcoal-700">{t("chooseVariantSubtitle")}</p>
@@ -198,7 +198,7 @@ export default async function CheckoutPage({
 
   return (
     <section className="space-y-6">
-      <header className="rounded-3xl border border-charcoal-900/10 bg-cream-50 px-6 py-7 shadow-lg shadow-charcoal-900/5">
+      <header className="rounded-3xl border border-white/60 bg-white/35 backdrop-blur-md px-6 py-8 shadow-lg shadow-charcoal-900/5">
         <h1 className="font-display text-4xl text-charcoal-900">{t("title")}</h1>
         <p className="mt-2 text-charcoal-700">{t("subtitle", {product: product.name})}</p>
         {sizeSummary ? <p className="mt-2 text-sm text-charcoal-700">{t("sizesTitle")} : {sizeSummary}</p> : null}
